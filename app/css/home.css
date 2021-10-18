@@ -1,0 +1,37 @@
+#container {
+    display: grid;
+    grid-template-areas: "gr-about gr-buy gr-lorem";
+
+}
+
+#about {
+    grid-area: gr-about;
+}
+
+#buy {
+    grid-area: gr-buy;
+}
+
+#lorem {
+    grid-area: gr-lorem;
+}
+
+#container > * {
+    border: 1px solid red;
+}
+
+@media screen and (max-width: 1000px) {
+    #container {
+        grid-template-areas: "gr-about gr-buy"
+                             "gr-lorem gr-lorem";
+
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #container {
+        display: block;
+
+    }
+
+}

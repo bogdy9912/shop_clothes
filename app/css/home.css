@@ -1,9 +1,32 @@
+
+:root{
+
+    --primaryColor : #40E659;
+    --secondaryColor : #2C49E6;
+    --secondaryColorDark : #3A4999;
+    --thirdColor : #E6B53D;
+    --thirdColorDark : #99751C;
+
+    font-size: 1rem;
+}
+
 #container {
     display: grid;
-    grid-template-areas: "gr-about gr-buy gr-lorem";
+    grid-template-areas: "gr-intro gr-intro gr-intro"
+                         "gr-tabel gr-about gr-about"
+                         "gr-tabel gr-lorem4 gr-lorem4"
+                         "gr-lorem5 gr-lorem6 gr-lorem7"
+                         "gr-lorem8 gr-lorem8 gr-lorem8"
+                         "gr-buy . .";
 
 }
 
+.empty-space {
+    grid-area: gr-intro;
+    height: 100vh;
+    top: 0;
+    position: relative;
+}
 #about {
     grid-area: gr-about;
 }
@@ -12,26 +35,72 @@
     grid-area: gr-buy;
 }
 
-#lorem {
-    grid-area: gr-lorem;
+#lorem3 {
+    grid-area: gr-lorem3;
+}
+#lorem4 {
+    grid-area: gr-lorem4;
+}
+#lorem5 {
+    grid-area: gr-lorem5;
+}
+#lorem6 {
+    grid-area: gr-lorem6;
+}
+#lorem7 {
+    grid-area: gr-lorem7;
+}
+#lorem8 {
+    grid-area: gr-lorem8;
+}
+#tabel {
+    grid-area: gr-tabel;
 }
 
 #container > * {
     border: 1px solid red;
 }
 
-@media screen and (max-width: 1000px) {
-    #container {
-        grid-template-areas: "gr-about gr-buy"
-                             "gr-lorem gr-lorem";
 
-    }
+
+#iframe_container{
+    display: flex;
+    flex-direction: row;
 }
 
-@media screen and (max-width: 500px) {
+#iframe_butoane{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#iframe_butoane a{
+    --height_button : 30px;
+    display: block;
+    width: 150px;
+    height: var(--height_button);
+    border: 1px solid black;
+    line-height: var(--height_button);
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+    body{
+        font-size: 0.9rem;
+    }
+
     #container {
         display: block;
 
     }
 
+}
+
+
+@media screen and (max-width: 600px) {
+    body{
+        font-size: 0.7rem;
+    }
 }

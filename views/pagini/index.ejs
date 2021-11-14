@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+
+    <%- include('../fragmente/head') %>
+
+
+
+
+
+    <link rel="stylesheet" href="css/table.css" type="text/css">
+
+
+</head>
+
+<body>
+<div class="watermark">Marin Bogdan</div>
+<header class="header" id="header">
+
+
+    <!--    <nav id="hamnav">-->
+    <!--         (B) THE HAMBURGER -->
+    <!--        <label for="hamburger">&#9776;</label>-->
+    <!--        <input type="checkbox" id="hamburger"/>-->
+    <!---->
+    <!--         (C) MENU ITEMS -->
+    <!--        <div id="hamitems">-->
+    <!--            <a href="a.html">Home</a>-->
+    <!--            <a href="b.html">Your home</a>-->
+    <!--            <a href="c.html">Invest</a>-->
+    <!---->
+    <!--        </div>-->
+    <!--    </nav>-->
+
+    <h1>Simple Properties</h1>
+    <%- include('../fragmente/nav_bar.ejs') %>
+</header>
+
+<main>
+    <div id="container">
+        <section id="introductory-video">
+            <video id="jumbotron-video" muted autoplay playsinline loop preload="metadata"
+                   style="object-fit: cover !important; height: 100%; width: 100%">
+                <source src="https://www.one.ro/media/1000-oup-intro.mp4?v=1634210933&r=20211014" type="video/mp4">
+                <source src="https://www.one.ro/media/1000-oup-intro.webm?v=1634210933&r=20211014" type="video/webm">
+            </video>
+        </section>
+        <div class="empty-space"></div>
+
+        <section id="tabel">
+            <div class="table-container">
+
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Location</th>
+                        <th>Building type</th>
+                        <th>Constructed</th>
+                        <th>Green plus</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Cotroceni</td>
+                        <td>Residential</td>
+                        <td colspan="2">Yes</td>
+
+                    </tr>
+                    <tr>
+                        <td>Lake</td>
+                        <td>Residential</td>
+                        <td>Yes</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>Lake</td>
+                        <td>Residential</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Lake</td>
+                        <td>Residential</td>
+                        <td>Yes</td>
+                        <td>No</td>
+                    </tr>
+                    </tbody>
+                    <tfoot>
+
+                    </tfoot>
+                    <caption>Properties Details</caption>
+                </table>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2 id="aboutSection">About us</h2>
+            <p>Simple Properties is one of the <b>largest</b> and most <b>successful</b> green developers of
+                residential, <i>mixed-use</i>, and
+                office real estate in Bucharest, Romania.</p>
+            <p>Landmark developments, <b>quality</b>, <b>design</b>, and <b>sustainability</b> represent the core
+                aspects of Simple Properties
+                strategy, the company being highly recognized with multiple local and internationals awards in these
+                fields.</p>
+            <aside>
+                <p>
+                    Simple Properties has officially entered in the most <em>exclusives club</em> of "Luxurious
+                    Homes in
+                    Europe"
+                </p>
+
+                <div id="iframe_container">
+                    <iframe src="https://wealthygorilla.com/most-expensive-houses/" name="ifr">
+                    </iframe>
+                    <div id="iframe_butoane">
+
+                        <a target="ifr" href="https://www.youtube.com/embed/0MV--Ogj6BM">House
+                            one</a>
+                        <a target="ifr" href="https://www.youtube.com/embed/0MV--Ogj6BM">EXEMPLU</a>
+                        <a target="ifr" href="https://www.youtube.com/watch?v=GJHkP7EvW94&ab_channel=laminatparchet">House
+                            two</a>
+                    </div>
+                </div>
+
+            </aside>
+        </section>
+        <hr class="hr-space">
+        <section id="buy">
+            <h2 id="buyHomeSection">Buy a home</h2>
+            <p>
+                We know that a home is something more then a house, and or homes are embracing the cozy atmosphere and
+                the modern architecture
+            </p>
+            <details open>
+                <summary>
+                    Residential
+                </summary>
+                <ul>
+                    <li>Simple by Lake</li>
+                    <li>Simple Cotroceni</li>
+
+                </ul>
+            </details>
+
+            <details>
+                <summary>
+                    Mixed-use
+                </summary>
+                <ul>
+                    <li>Simple Nord</li>
+                    <li>Simple Stejarii</li>
+
+                </ul>
+            </details>
+
+            <details>
+                <summary>
+                    Offices
+                </summary>
+                <ul>
+
+
+                    <li>Simple Floreasca</li>
+                </ul>
+            </details>
+
+
+        </section>
+
+        <section id="lorem4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At beatae cum earum fuga iusto
+            labore, nisi quae reiciendis sed sequi sit voluptatem! Harum laudantium neque quaerat repellendus ullam unde
+            vero.
+        </section>
+        <section id="lorem5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At beatae cum earum fuga iusto
+            labore, nisi quae reiciendis sed sequi sit voluptatem! Harum laudantium neque quaerat repellendus ullam unde
+            vero.
+        </section>
+        <section id="lorem6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At beatae cum earum fuga iusto
+            labore, nisi quae reiciendis sed sequi sit voluptatem! Harum laudantium neque quaerat repellendus ullam unde
+            vero.
+        </section>
+        <section id="lorem7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At beatae cum earum fuga iusto
+            labore, nisi quae reiciendis sed sequi sit voluptatem! Harum laudantium neque quaerat repellendus ullam unde
+            vero.
+        </section>
+        <section id="lorem8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At beatae cum earum fuga iusto
+            labore, nisi quae reiciendis sed sequi sit voluptatem! Harum laudantium neque quaerat repellendus ullam unde
+            vero.
+        </section>
+
+
+    </div>
+
+
+</main>
+
+<%- include('../fragmente/footer') %>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+.up-icon-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    border: 3px solid black;
+    border-top: none;
+    border-bottom: none;
+}
+
+.up-button{
+    text-decoration: none;
+}
+
+.up-icon{
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid black;
+    opacity: 0.5;
+    transition: 1s;
+}
+
+.up-icon-container:hover .up-icon{
+    opacity: 1;
+    transform: translateY(-5px);
+
+    border-bottom-color: orange;
+}
+.up-icon-container:hover~.tooltip{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tooltip{
+    display: none;
+    position: relative;
+    z-index: 1;
+    /*margin-top: 10px;*/
+    border: 1px solid black;
+    transition: 1s;
+
+}

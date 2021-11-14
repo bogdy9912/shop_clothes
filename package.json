@@ -1,0 +1,25 @@
+{
+  "name": "shop_clothes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bogdy9912/shop_clothes.git"
+  },
+  "keywords": [],
+  "author": "Marin Bogdan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bogdy9912/shop_clothes/issues"
+  },
+  "homepage": "https://github.com/bogdy9912/shop_clothes#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "ip": "^1.1.5"
+  }
+}

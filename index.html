@@ -1,214 +1,282 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
 
-    <meta name="author" content="Marin Bogdan">
-    <meta name="keywords" content="buildings, properties, home, tech homes ">
-    <meta name="description" content="Find our new collection of clothes">
-    <link rel="shortcut icon" type="image/x-icon" href="https://img.icons8.com/ios/50/000000/constructing.png">
-    <title>Simple Properties</title>
-    <link rel="stylesheet" href="./app/css/reset_styles.css" type="text/css">
-    <link rel="stylesheet" href="./app/css/home.css" type="text/css">
-    <link rel="stylesheet" href="./app/css/nav-bar.css" type="text/css">
-</head>
-<body>
-
-<header class="header">
-
-    <nav class="nav-bar">
-        <ul class="nav-list">
-            <li class="nav-menu">
-                <a href="">Simple Properties</a>
-            </li>
-            <li class="nav-menu">
-                <div class="nav-item">
-                    <a href="#">Home</a>
-                </div>
-                <ul class="nav-submenu">
-
-                    <li class="nav-item nav-item-submenu"><a href="#aboutSection">About</a></li>
-                    <li class="nav-item nav-item-submenu"><a href="#buyHomeSection">Buy from us</a></li>
-                </ul>
-            </li>
-            <li class="nav-menu">
-                <div class="nav-item">
-                    <a href="app/html/about.html">Your home</a>
-
-                </div>
-                <ul class="nav-submenu">
-                    <li class="nav-item nav-item-submenu">
-                        <a href="">
-                            Hire a designer
-                        </a>
-                    </li>
-                    <li class="nav-item nav-item-submenu">
-                        <a href="">
-                            Get furniture
-                        </a>
-                    </li>
-                    <li class="nav-item nav-item-submenu">
-                        <a href="">
-                            Clean energy
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li class="nav-menu">
-                <div class="nav-item">
-                    <a href="app/html/contact.html">Be an investor</a>
-                </div>
-            </li>
-        </ul>
-    </nav>
-</header>
-
-<main>
-    <div id="container">
-        <section id="introductory-video">
-            <video id="jumbotron-video" muted autoplay playsinline loop preload="metadata"
-                   style="object-fit: cover !important; height: 100%; width: 100%">
-                <source src="https://www.one.ro/media/1000-oup-intro.mp4?v=1634210933&r=20211014" type="video/mp4">
-                <source src="https://www.one.ro/media/1000-oup-intro.webm?v=1634210933&r=20211014" type="video/webm">
-            </video>
-        </section>
-        <div class="empty-space"></div>
-
-        <section id="tabel">
-            <table>
-                <tr>
-                    <th>Location</th>
-                    <th>Building type</th>
-                    <th>Constructed</th>
-                </tr>
-                <tr>
-                    <td>Cotroceni</td>
-                    <td>Residential</td>
-                    <td>Yes</td>
-                </tr>
-                <tr>
-                    <td>Lake</td>
-                    <td>Residential</td>
-                    <td>No</td>
-                </tr>
-            </table>
-        </section>
-
-        <section id="about">
-            <h2 id="aboutSection">About us</h2>
-            <p>Simple Properties is one of the <b>largest</b> and most <b>successful</b> green developers of
-                residential, <i>mixed-use</i>, and
-                office real estate in Bucharest, Romania.</p>
-            <p>Landmark developments, <b>quality</b>, <b>design</b>, and <b>sustainability</b> represent the core
-                aspects of Simple Properties
-                strategy, the company being highly recognized with multiple local and internationals awards in these
-                fields.</p>
-            <aside>
-                <p>
-                    Simple Properties has officially entered in the most <em>exclusives club</em> of "Luxurious
-                    Homes in
-                    Europe"
-                </p>
-
-                <div id="iframe_container">
-                    <iframe src="https://wealthygorilla.com/most-expensive-houses/" name="ifr">
-                    </iframe>
-                    <div id="iframe_butoane">
-
-                        <a target="ifr" href="https://www.youtube.com/embed/0MV--Ogj6BM">House
-                            one</a>
-                        <a target="ifr" href="https://www.youtube.com/embed/0MV--Ogj6BM">EXEMPLU</a>
-                        <a target="ifr" href="https://www.youtube.com/watch?v=GJHkP7EvW94&ab_channel=laminatparchet">House
-                            two</a>
-                    </div>
-                </div>
-
-            </aside>
-        </section>
-
-        <section id="buy">
-            <h2 id="buyHomeSection">Buy a home</h2>
-            <p>
-                We know that a home is something more then a house, and or homes are embracing the cozy atmosphere and
-                the modern architecture
-            </p>
-            <details open>
-                <summary>
-                    Residential
-                </summary>
-                <ul>
-                    <li>Simple by Lake</li>
-                    <li>Simple Cotroceni</li>
-
-                </ul>
-            </details>
-
-            <details>
-                <summary>
-                    Mixed-use
-                </summary>
-                <ul>
-                    <li>Simple Nord</li>
-                    <li>Simple Stejarii</li>
-
-                </ul>
-            </details>
-
-            <details>
-                <summary>
-                    Offices
-                </summary>
-                <ul>
+<!--    <meta name="author" content="Marin Bogdan">-->
+<!--    <meta name="keywords" content="buildings, properties, home, tech homes ">-->
+<!--    <meta name="description" content="Find our new collection of clothes">-->
+<!--    <link rel="shortcut icon" type="image/x-icon" href="https://img.icons8.com/ios/50/000000/constructing.png">-->
+<!--    <title>Simple Properties</title>-->
+<!--    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<!--    <link rel="stylesheet" href="./app/css/reset_styles.css" type="text/css">-->
+<!--    <link rel="stylesheet" href="./app/css/home.css" type="text/css">-->
+<!--    <link rel="stylesheet" href="./app/css/nav-bar.css" type="text/css">-->
+<!--    <link rel="stylesheet" href="./app/css/nav.css" type="text/css">-->
+<!--    <link rel="stylesheet" href="./app/css/up-icon.css" type="text/css">-->
+<!--    <link rel="stylesheet" href="./app/css/table.css" type="text/css">-->
+<!--    <link rel="stylesheet" href="./app/css/print_style.css" type="text/css">-->
+<!--    <script src="https://kit.fontawesome.com/0c06f6cd60.js" crossorigin="anonymous"></script>-->
+<!--</head>-->
+<!--<body>-->
+<!--<div class="watermark">Marin Bogdan</div>-->
+<!--<header class="header" id="header">-->
 
 
-                    <li>Simple Floreasca</li>
-                </ul>
-            </details>
+<!--    &lt;!&ndash;    <nav id="hamnav">&ndash;&gt;-->
+<!--    &lt;!&ndash;         (B) THE HAMBURGER &ndash;&gt;-->
+<!--    &lt;!&ndash;        <label for="hamburger">&#9776;</label>&ndash;&gt;-->
+<!--    &lt;!&ndash;        <input type="checkbox" id="hamburger"/>&ndash;&gt;-->
+<!--    &lt;!&ndash;&ndash;&gt;-->
+<!--    &lt;!&ndash;         (C) MENU ITEMS &ndash;&gt;-->
+<!--    &lt;!&ndash;        <div id="hamitems">&ndash;&gt;-->
+<!--    &lt;!&ndash;            <a href="a.html">Home</a>&ndash;&gt;-->
+<!--    &lt;!&ndash;            <a href="b.html">Your home</a>&ndash;&gt;-->
+<!--    &lt;!&ndash;            <a href="c.html">Invest</a>&ndash;&gt;-->
+<!--    &lt;!&ndash;&ndash;&gt;-->
+<!--    &lt;!&ndash;        </div>&ndash;&gt;-->
+<!--    &lt;!&ndash;    </nav>&ndash;&gt;-->
+
+<!--    <h1>Simple Properties</h1>-->
+<!--    <nav class="nav-bar">-->
+<!--        <label for="hamburger" class="hamburger">&#9776;</label>-->
+<!--        <input type="checkbox" id="hamburger"/>-->
+
+<!--        <ul class="nav-list">-->
+<!--            <li class="nav-menu">-->
+<!--                <a href="" id="company-name">Simple Properties</a>-->
+<!--                <i class="fa fa-home icon-properties"></i>-->
+<!--            </li>-->
+<!--            <li class="nav-menu">-->
+<!--                <div class="nav-item">-->
+<!--                    <a href="#">Home</a>-->
+<!--                </div>-->
+<!--                <ul class="nav-submenu">-->
+<!--                    <li class="nav-item nav-item-submenu"><a href="#aboutSection">About</a></li>-->
+<!--                    <li class="nav-item nav-item-submenu"><a href="#buyHomeSection">Buy from us</a></li>-->
+<!--                </ul>-->
+<!--            </li>-->
+<!--            <li class="nav-menu">-->
+<!--                <div class="nav-item">-->
+<!--                    <a href="app/html/about.html">Your home</a>-->
+
+<!--                </div>-->
+<!--                <ul class="nav-submenu">-->
+<!--                    <li class="nav-item nav-item-submenu">-->
+<!--                        <a href="">-->
+<!--                            Hire a designer-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item nav-item-submenu">-->
+<!--                        <a href="">-->
+<!--                            Get furniture-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item nav-item-submenu">-->
+<!--                        <a href="">-->
+<!--                            Clean energy-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </li>-->
+<!--            <li class="nav-menu">-->
+<!--                <div class="nav-item">-->
+<!--                    <a href="app/html/contact.html">Be an investor</a>-->
+<!--                </div>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--    </nav>-->
+<!--</header>-->
+
+<!--<main>-->
+<!--    <div id="container">-->
+<!--        <section id="introductory-video">-->
+<!--            <video id="jumbotron-video" muted autoplay playsinline loop preload="metadata"-->
+<!--                   style="object-fit: cover !important; height: 100%; width: 100%">-->
+<!--                <source src="https://www.one.ro/media/1000-oup-intro.mp4?v=1634210933&r=20211014" type="video/mp4">-->
+<!--                <source src="https://www.one.ro/media/1000-oup-intro.webm?v=1634210933&r=20211014" type="video/webm">-->
+<!--            </video>-->
+<!--        </section>-->
+<!--        <div class="empty-space"></div>-->
+
+<!--        <section id="tabel">-->
+<!--            <div class="table-container">-->
 
 
-        </section>
+<!--            <table>-->
+<!--                <thead>-->
+<!--                <tr>-->
+<!--                    <th>Location</th>-->
+<!--                    <th>Building type</th>-->
+<!--                    <th>Constructed</th>-->
+<!--                    <th>Green plus</th>-->
+<!--                </tr>-->
+<!--                </thead>-->
+<!--                <tbody>-->
+<!--                <tr>-->
+<!--                    <td>Cotroceni</td>-->
+<!--                    <td>Residential</td>-->
+<!--                    <td colspan="2">Yes</td>-->
 
-        <section id="lorem4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At beatae cum earum fuga iusto
-            labore, nisi quae reiciendis sed sequi sit voluptatem! Harum laudantium neque quaerat repellendus ullam unde
-            vero.
-        </section>
-        <section id="lorem5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At beatae cum earum fuga iusto
-            labore, nisi quae reiciendis sed sequi sit voluptatem! Harum laudantium neque quaerat repellendus ullam unde
-            vero.
-        </section>
-        <section id="lorem6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At beatae cum earum fuga iusto
-            labore, nisi quae reiciendis sed sequi sit voluptatem! Harum laudantium neque quaerat repellendus ullam unde
-            vero.
-        </section>
-        <section id="lorem7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At beatae cum earum fuga iusto
-            labore, nisi quae reiciendis sed sequi sit voluptatem! Harum laudantium neque quaerat repellendus ullam unde
-            vero.
-        </section>
-        <section id="lorem8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At beatae cum earum fuga iusto
-            labore, nisi quae reiciendis sed sequi sit voluptatem! Harum laudantium neque quaerat repellendus ullam unde
-            vero.
-        </section>
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                    <td>Lake</td>-->
+<!--                    <td>Residential</td>-->
+<!--                    <td>Yes</td>-->
+<!--                    <td>No</td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                    <td>Lake</td>-->
+<!--                    <td>Residential</td>-->
+<!--                    <td>No</td>-->
+<!--                    <td>Yes</td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                    <td>Lake</td>-->
+<!--                    <td>Residential</td>-->
+<!--                    <td>Yes</td>-->
+<!--                    <td>No</td>-->
+<!--                </tr>-->
+<!--                </tbody>-->
+<!--                <tfoot>-->
 
-    </div>
-</main>
+<!--                </tfoot>-->
+<!--                <caption>Properties Details</caption>-->
+<!--            </table>-->
+<!--            </div>-->
+<!--        </section>-->
 
-<footer>
-    <a href="#header">Go up</a>
-    <a target="_blank"
-       href="https://docs.google.com/document/d/1q0FHbTivGG48YJo75gg_5e1QoMOjoCHP1zbDrLlfXjc/edit?usp=sharing">Go to
-        doc</a>
-    <address>
-        Phone: <a href="tel:+40712345678">+407 123 456 78</a>
-        Address: Str. Mircea Eliade
-        Email: <a href="mailto:contact@simple.com">contact@simple.com</a><br>
-    </address>
+<!--        <section id="about">-->
+<!--            <h2 id="aboutSection">About us</h2>-->
+<!--            <p>Simple Properties is one of the <b>largest</b> and most <b>successful</b> green developers of-->
+<!--                residential, <i>mixed-use</i>, and-->
+<!--                office real estate in Bucharest, Romania.</p>-->
+<!--            <p>Landmark developments, <b>quality</b>, <b>design</b>, and <b>sustainability</b> represent the core-->
+<!--                aspects of Simple Properties-->
+<!--                strategy, the company being highly recognized with multiple local and internationals awards in these-->
+<!--                fields.</p>-->
+<!--            <aside>-->
+<!--                <p>-->
+<!--                    Simple Properties has officially entered in the most <em>exclusives club</em> of "Luxurious-->
+<!--                    Homes in-->
+<!--                    Europe"-->
+<!--                </p>-->
 
-    <small>
-        Simple Properties &copy;
-        <time datetime="2021-10-16">2021-10-16</time>
-    </small>
-</footer>
+<!--                <div id="iframe_container">-->
+<!--                    <iframe src="https://wealthygorilla.com/most-expensive-houses/" name="ifr">-->
+<!--                    </iframe>-->
+<!--                    <div id="iframe_butoane">-->
 
-</body>
-</html>
+<!--                        <a target="ifr" href="https://www.youtube.com/embed/0MV&#45;&#45;Ogj6BM">House-->
+<!--                            one</a>-->
+<!--                        <a target="ifr" href="https://www.youtube.com/embed/0MV&#45;&#45;Ogj6BM">EXEMPLU</a>-->
+<!--                        <a target="ifr" href="https://www.youtube.com/watch?v=GJHkP7EvW94&ab_channel=laminatparchet">House-->
+<!--                            two</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--            </aside>-->
+<!--        </section>-->
+<!--        <hr class="hr-space">-->
+<!--        <section id="buy">-->
+<!--            <h2 id="buyHomeSection">Buy a home</h2>-->
+<!--            <p>-->
+<!--                We know that a home is something more then a house, and or homes are embracing the cozy atmosphere and-->
+<!--                the modern architecture-->
+<!--            </p>-->
+<!--            <details open>-->
+<!--                <summary>-->
+<!--                    Residential-->
+<!--                </summary>-->
+<!--                <ul>-->
+<!--                    <li>Simple by Lake</li>-->
+<!--                    <li>Simple Cotroceni</li>-->
+
+<!--                </ul>-->
+<!--            </details>-->
+
+<!--            <details>-->
+<!--                <summary>-->
+<!--                    Mixed-use-->
+<!--                </summary>-->
+<!--                <ul>-->
+<!--                    <li>Simple Nord</li>-->
+<!--                    <li>Simple Stejarii</li>-->
+
+<!--                </ul>-->
+<!--            </details>-->
+
+<!--            <details>-->
+<!--                <summary>-->
+<!--                    Offices-->
+<!--                </summary>-->
+<!--                <ul>-->
+
+
+<!--                    <li>Simple Floreasca</li>-->
+<!--                </ul>-->
+<!--            </details>-->
+
+
+<!--        </section>-->
+
+<!--        <section id="lorem4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At beatae cum earum fuga iusto-->
+<!--            labore, nisi quae reiciendis sed sequi sit voluptatem! Harum laudantium neque quaerat repellendus ullam unde-->
+<!--            vero.-->
+<!--        </section>-->
+<!--        <section id="lorem5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At beatae cum earum fuga iusto-->
+<!--            labore, nisi quae reiciendis sed sequi sit voluptatem! Harum laudantium neque quaerat repellendus ullam unde-->
+<!--            vero.-->
+<!--        </section>-->
+<!--        <section id="lorem6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At beatae cum earum fuga iusto-->
+<!--            labore, nisi quae reiciendis sed sequi sit voluptatem! Harum laudantium neque quaerat repellendus ullam unde-->
+<!--            vero.-->
+<!--        </section>-->
+<!--        <section id="lorem7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At beatae cum earum fuga iusto-->
+<!--            labore, nisi quae reiciendis sed sequi sit voluptatem! Harum laudantium neque quaerat repellendus ullam unde-->
+<!--            vero.-->
+<!--        </section>-->
+<!--        <section id="lorem8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At beatae cum earum fuga iusto-->
+<!--            labore, nisi quae reiciendis sed sequi sit voluptatem! Harum laudantium neque quaerat repellendus ullam unde-->
+<!--            vero.-->
+<!--        </section>-->
+
+
+<!--    </div>-->
+
+
+<!--</main>-->
+
+<!--<footer>-->
+<!--    <div class="footer-container">-->
+
+<!--    <a href="#header">Go up</a>-->
+<!--    <a target="_blank"-->
+<!--       href="https://docs.google.com/document/d/1q0FHbTivGG48YJo75gg_5e1QoMOjoCHP1zbDrLlfXjc/edit?usp=sharing">Go to-->
+<!--        doc</a>-->
+<!--    <address>-->
+<!--        Phone: <a href="tel:+40712345678">+407 123 456 78</a>-->
+<!--        Address: Str. Mircea Eliade-->
+<!--        Email: <a href="mailto:contact@simple.com">contact@simple.com</a><br>-->
+<!--    </address>-->
+
+<!--    <small>-->
+<!--        Simple Properties &copy;-->
+<!--        <time datetime="2021-10-16">2021-10-16</time>-->
+<!--    </small>-->
+<!--    </div>-->
+<!--    <a href="#header" class="up-button" >-->
+<!--        <div class="up-icon-container">-->
+
+<!--            <div class="up-icon">-->
+
+<!--            </div>-->
+<!--        </div>-->
+<!--            <p class="tooltip">Sus</p>-->
+<!--    </a>-->
+<!--</footer>-->
+
+<!--</body>-->
+<!--</html>-->

@@ -12,7 +12,13 @@
 
 #container {
     display: grid;
-    grid-template-areas: "gr-intro gr-intro gr-intro" "gr-tabel gr-about gr-about" "gr-tabel gr-lorem4 gr-lorem4" "gr-lorem5 gr-lorem6 gr-lorem7" "gr-hr gr-hr gr-hr" "gr-lorem8 gr-lorem8 gr-lorem8" "gr-buy . .";
+    grid-template-areas: "gr-intro gr-intro gr-intro"
+    "gr-tabel gr-about gr-about"
+    "gr-tabel gr-lorem4 gr-lorem4"
+    "gr-lorem5 gr-lorem6 gr-lorem7"
+    "gr-hr gr-hr gr-hr"
+    "gr-lorem8 gr-lorem8 gr-lorem8"
+    "gr-buy . .";
 
 }
 

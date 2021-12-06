@@ -1,0 +1,67 @@
+{
+  "caleGalerie": "\\galerie_imagini",
+  "imagini": [
+
+    {
+      "cale_fisier": "rsz_floreasca1.jpg",
+      "titlu": "Floreasca 1",
+      "alt": "Floreasca City2",
+      "luni": ["ianuarie", "februarie"]
+    },
+    {
+      "cale_fisier": "rsz_floreaca3.jpg",
+      "titlu": "Floreasca 3",
+      "alt": "Floreasca City2",
+      "luni": ["ianuarie"]
+    },
+    {
+      "cale_fisier": "rsz_herastrau1.jpg",
+      "titlu": "Herastrau 1",
+      "alt": "Floreasca City2",
+      "luni": ["ianuarie"]
+    },
+    {
+      "cale_fisier": "rsz_herastrau2.jpg",
+      "titlu": "Herastrau 2",
+      "alt": "Floreasca City2",
+      "luni": ["ianuarie", "December"],
+      "author":"One United Properties S.A"
+    },
+    {
+      "cale_fisier": "rsz_mamaia.jpg",
+      "titlu": "Mamaia 1",
+      "alt": "Mamaia City2",
+      "luni": ["ianuarie", "December"]
+    },
+    {
+      "cale_fisier": "rsz_oneTower.jpg",
+      "titlu": "OneTower",
+      "alt": "Mircea Eliade City2",
+      "luni": ["ianuarie"]
+    },
+    {
+      "cale_fisier": "rsz_1one.jpg",
+      "titlu": "OneTower",
+      "alt": "Mircea Eliade City2",
+      "luni": ["ianuarie"]
+    },
+    {
+      "cale_fisier": "rsz_1verdi.jpg",
+      "titlu": "Verdi",
+      "alt": "Verdi City2",
+      "luni": ["ianuarie", "December"]
+    },
+    {
+      "cale_fisier": "rsz_cotroceni.jpg",
+      "titlu": "cotroceni",
+      "alt": "cotroceni City2",
+      "luni": ["ianuarie", "December"]
+    },
+    {
+      "cale_fisier": "rsz_1herastrau3.jpg",
+      "titlu": "herastrau3",
+      "alt": "herastrau3 City2",
+      "luni": ["ianuarie"]
+    }
+  ]
+}

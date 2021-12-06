@@ -1,0 +1,37 @@
+#galerie-statica{
+    padding-left:10px;
+    padding-right:10px;
+}
+
+#grid-galerie {
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap:0.5em;
+    grid-column-gap:0.5em;
+}
+#grid-galerie img{
+    width: 100%;
+}
+#grid-galerie img:hover{
+    filter: contrast(200%);
+    transition: all 1s;
+}
+#grid-galerie figcaption{
+    text-align:center;
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+}
+
+
+@media screen and (max-width:800px){
+    #grid-galerie {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width:500px){
+    #grid-galerie {
+        display:block;
+    }
+}

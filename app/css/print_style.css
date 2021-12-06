@@ -1,0 +1,95 @@
+@media print {
+
+    body {
+        margin: 0;
+        color: #000;
+        background-color: #fff;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    #iframe_container {
+        display: none;
+    }
+
+    .up-button {
+        display: none;
+    }
+
+    #introductory-video {
+        display: none;
+    }
+
+    .empty-space {
+        display: none;
+    }
+
+    .watermark {
+        position: fixed;
+        margin: auto auto;
+        font-size: 1rem;
+        display: block;
+        top: 48%;
+        left: 40%;
+        opacity: 0.3;
+        width: 60vw;
+        height: 10%;
+
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .nav-list {
+        display: block;
+
+        page-break-after: always;
+    }
+    .nav-item{
+        text-align: start;
+    }
+    .nav-item-submenu{
+        text-align: center;
+    }
+
+    .nav-menu {
+        width: 40%;
+    }
+
+    .nav-submenu {
+        /*display: block;*/
+        height: 100%;
+        transform: scale(1, 1);
+
+    }
+
+
+    @page {
+        size: A4 portrait;
+        margin-top: 2cm;
+        margin-bottom: 3cm;
+        counter-increment: page;
+
+    }
+
+    @page :left {
+
+        margin-left: 2cm;
+        margin-right: 1cm;
+        border-radius: 20cm;
+    }
+
+    @page :right {
+
+        margin-right: 2cm;
+        margin-left: 1cm;
+    }
+
+
+    footer {
+        page-break-before: always;
+    }
+}

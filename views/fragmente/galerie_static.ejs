@@ -1,0 +1,15 @@
+<section id="galerie-statica">
+    <h2>Galerie</h2>
+    <div id="grid-galerie">
+        <% for (let img of imagini)
+        {
+        %>
+        <figure>
+            <img src="<%- cale + "\\" + img.cale_fisier %>" alt="<%=img.alt%>">
+            <figcaption>
+                <%= img.titlu %>
+            </figcaption>
+        </figure>
+        <% } %>
+    </div>
+</section>

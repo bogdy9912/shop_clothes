@@ -11,13 +11,21 @@ console.dir(ip.address());
 const app = express();
 const port = process.env.PORT || 8080;
 
-var client = new Client({
-    user: 'bogdan',
-    password: 'bogdan',
-    database: 'simple_properties',
-    host: 'localhost',
-    port: 5432
-});
+// var client = new Client({
+//     user: 'bogdan',
+//     password: 'bogdan',
+//     database: 'simple_properties',
+//     host: 'localhost',
+//     port: 5432
+// });
+
+var client=new Client({
+    user: 'nxldtoyrtruhgl',
+    password:'95e254f6a4235e1b0534cfcba3649399db6e35b65789949a530d46268ed557b1',
+    database:'d1sdt080v7p24k', host:'ec2-34-195-69-118.compute-1.amazonaws.com', port:5432,
+    ssl: {
+        rejectUnauthorized: false
+      } });
 
 
 var v_optiuni = [];
@@ -187,13 +195,7 @@ app.get('/:pagina', (req, res) => {
 // var client=new Client({ user: 'bogdan', password:'bogdan',database:'simple_properties', host:'localhost', port:5432,  ssl: {
 //         rejectUnauthorized: false
 //     } });
-/*var client=new Client({
-    user: 'cyshaohbdkflix',
-    password:'b8c463fcc4de964e38a065008bc6f9532ec55e59dd22bed4fdb7540c4075642f',
-    database:'d3odd5eht8vd3s', host:'ec2-35-153-4-187.compute-1.amazonaws.com', port:5432,
-    ssl: {
-        rejectUnauthorized: false
-      } });*/
+
 // client.connect();
 
 

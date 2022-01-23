@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 const fs = require("fs"); // Or `import fs from "fs";` with ESM
-const sharp = require('sharp');
+
 const {Client} = require("pg");
 const ip = require("ip");
 const ejs = require("ejs");

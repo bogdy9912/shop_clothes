@@ -35,11 +35,11 @@ $setare-server:5 !default;
 	left:0;
 	top:0;
 	z-index:0;
-	animation-name:gal_exemplu;
+	animation-name:galerie-animata;
 	animation-timing-function:linear;
 	animation-iteration-count:infinite;
 	animation-fill-mode:forwards;
-	animation-duration:21s;	
+	animation-duration:21s;
 	transform-origin:center center;
 }
 #galerie-animata figure:nth-of-type(7){/* cea mai de deasupra*/
@@ -75,16 +75,33 @@ x%........3s
 
 - calculam 100-14.285714=85.714286 - la acest moment imaginea trebuie sa se vada in spatele imaginii care se afiseaza in mod curent (ca sa se vada si cat timp se realizeaza efectul de schimbare a imaginii
 */
-@keyframes gal_exemplu{ 
+//@keyframes galerie-animata{
+//	0% {z-index:10;opacity:1;} /*perioada 0-5% in care se afiseaza fara efect */
+//	7.142857% {clip-path: circle(15%);} /*transformare inceput disparitie*/
+//	12%{opacity:1;} /* de  aici doresc sa descresc si opacitatea;*/
+//	14.285714%{z-index:10;opacity:0;clip-path: circle(25%);}
+//	14.285715%{z-index:-10; clip-path: circle(35%);}/* il ascund cat mai in spate sa nu vina peste imaginile care erau mai sus in html decat el*/
+//
+//	85.714287%{opacity:0;clip-path: circle(100%);z-index:-10;}
+//	85.714288%{z-index:0;opacity: 1;}/*setez z-index la 0 ca sa revina la ordinea normala de afisare*/
+//	100%{opacity:1;z-index:0;}
+//}
+
+
+@keyframes galerie-animata{
 	0% {z-index:10;opacity:1;} /*perioada 0-5% in care se afiseaza fara efect */
-	7.142857% {clip-path: circle(25%);} /*transformare inceput disparitie*/
-	12%{opacity:1;} /* de  aici doresc sa descresc si opacitatea;*/
-	14.285714%{z-index:10;opacity:0;clip-path: circle(25%);}
-	14.285715%{z-index:-10; clip-path: circle(25%);}/* il ascund cat mai in spate sa nu vina peste imaginile care erau mai sus in html decat el*/
-	
-	85.714287%{opacity:0;clip-path: circle(25%);z-index:-10;}
+	7.142857% {clip-path: circle(100%)}
+	12%{opacity:1;transform: rotateZ(0deg);} /* de  aici doresc sa descresc si opacitatea;*/
+	14.285714%{z-index:10;opacity:0;clip-path: circle(10%);transform: rotateZ(360deg);}
+	14.285715%{z-index:-10;transform: rotateZ(0deg); }/* il ascund cat mai in spate sa nu vina peste imaginile care erau mai sus in html decat el*/
+
+	85.714287%{opacity:0;clip-path: circle(0%);z-index:-10;}
 	85.714288%{z-index:0;}/*setez z-index la 0 ca sa revina la ordinea normala de afisare*/
 	100%{opacity:1;z-index:0;}
+}
+
+.galerie-a-item:hover {
+	animation-play-state: paused;
 }
 
 @media screen and (max-width:500px){

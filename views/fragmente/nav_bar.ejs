@@ -5,16 +5,16 @@
 
     <ul class="nav-list">
         <li class="nav-menu">
-            <a href="" id="company-name">Simple Properties</a>
+            <a href="/" id="company-name">Simple Properties</a>
             <i class="fa fa-home icon-properties"></i>
         </li>
         <li class="nav-menu">
             <div class="nav-item">
-                <a href="#">Home</a>
+                <a href="/">Home</a>
             </div>
             <ul class="nav-submenu">
-                <li class="nav-item nav-item-submenu"><a href="#aboutSection">About</a></li>
-                <li class="nav-item nav-item-submenu"><a href="#buyHomeSection">Buy from us</a></li>
+                <li class="nav-item nav-item-submenu"><a href="/#aboutSection">About</a></li>
+                <li class="nav-item nav-item-submenu"><a href="/#buyHomeSection">Buy from us</a></li>
             </ul>
         </li>
         <li class="nav-menu">
@@ -24,17 +24,17 @@
             </div>
             <ul class="nav-submenu">
                 <li class="nav-item nav-item-submenu">
-                    <a href="">
+                    <a href="/">
                         Hire a designer
                     </a>
                 </li>
                 <li class="nav-item nav-item-submenu">
-                    <a href="">
+                    <a href="/">
                         Get furniture
                     </a>
                 </li>
                 <li class="nav-item nav-item-submenu">
-                    <a href="">
+                    <a href="/">
                         Clean energy
                     </a>
                 </li>
@@ -44,6 +44,21 @@
             <div class="nav-item">
                 <a href="http://localhost:8080/be_investor">Be an investor</a>
             </div>
+        </li>
+        <li class="nav-menu">
+            <div class="nav-item">
+                <a href="http://localhost:8080/produse">Produse</a>
+            </div>
+            <ul  class="nav-submenu">
+                <%for (let i of optiuni){%>
+                    <li class="nav-item nav-item-submenu">
+                        <a href=<%=`http://localhost:8080/produse?tip=${i}`%>>
+                        <%= i%>
+
+                        </a>
+                    </li>
+                <%}%>
+            </ul>
         </li>
     </ul>
 </nav>

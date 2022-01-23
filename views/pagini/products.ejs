@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <%- include('../fragmente/head')%>
+    <title>Products</title>
+</head>
+<body>
+
+<%- include('../fragmente/nav_bar')%>
+
+<h1 style="color: black;">Products:</h1>
+
+
+<%for (let i=0; i<4;i++){%>
+    <%- include('../fragmente/product')%>
+<%}%>
+
+
+
+<%- include('../fragmente/footer')%>
+
+
+</body>
+</html>

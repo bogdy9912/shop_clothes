@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+
+
+
+    <%- include('../fragmente/head')%>
+
+    <link href="css/produs.css" type="text/css" rel="stylesheet" />
+
+
+    <title>Simple Properties</title>
+</head>
+<body>
+<%- include('../fragmente/nav_bar.ejs', {optiuni: locals.optiuni}) %>
+
+
+<main>
+    <section>
+        <h2>Pagină produs</h2>
+        <article id="art-produs">
+            <h3><span class="nume"><%- locals.prod.nume %></span></h3>
+            <p>Pret: <span class="pret"><%- locals.prod.pret %> </span></p>
+            <p>Descriere: <span class="descriere"><%- locals.prod.descriere %> </span></p>
+            <p>Auxiliare: <span class="ingrediente"><%- locals.prod.auxiliare %> </span></p>
+            <p>Garantie: <span class="calorii"><%- locals.prod.garantie %> ani</span></p>
+            <p>Etaj: <span class="gramaj"><%- locals.prod.etaj %> </span></p>
+            <p>Categorie: <span class="categorie"><%- locals.prod.categorie %> </span></p>
+            <p>Pentru inchiriat: <span class="pt_diabetici"><%- locals.prod.rent %> </span></p>
+            <p>Data adăugare: <span class="categorie"><%- locals.prod.data_adaugare %> </span></p>
+            <figure class="imag-produs">
+                <img  src="/assets/imagini/produse/<%- locals.prod.imagine %>" alt="[imagine <%- locals.prod.name %>]" />
+            </figure>
+        </article>
+
+    </section>
+</main>
+
+<%- include("../fragmente/footer") %>
+</body>
+</html>

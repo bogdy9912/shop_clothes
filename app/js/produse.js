@@ -110,7 +110,7 @@ window.onload= function(){
         v_articole.sort(function(a,b){
             var nume_a=a.getElementsByClassName("val-nume")[0].innerHTML;
             var nume_b=b.getElementsByClassName("val-nume")[0].innerHTML;
-            if(nume_a!=nume_b){
+            if(nume_a!==nume_b){
                 return semn*nume_a.localeCompare(nume_b);
             }
             else{

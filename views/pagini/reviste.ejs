@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reviste</title>
+    <link rel="stylesheet" href="css/reviste.css">
+</head>
+<body>
+
+
+<div class="grid-reviste">
+
+<% for (let revista of reviste){
+%>
+<article class="revista" id="id-<%- revista.id %>" style="background-color: <%=Number.parseInt( (reviste.indexOf(revista) / 3) % 2) === 0? 'blue': 'white'%>">
+
+    <h2 style="text-decoration: underline;"><i><%-revista.titlu%>(<%-revista.nrpagini%>)</i></h2>
+    <p><%-revista.aparitie%> <span class="pret"><%- revista.pret%> </span></p>
+    <ul>
+        <%for (let tema of revista.tematici.split('/')){%>
+        <li><%-tema%></li>
+<% } %>
+
+    </ul>
+</article>
+<% } %>
+</div>
+
+</body>
+</html>

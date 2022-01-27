@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html  lang="ro">
+    <head>
+        <link rel="stylesheet" href="css/produse.css" type="text/css" />
+        <title>Simple Properties </title>
+        <%- include("../fragmente/head") %>     
+        <script type="text/javascript" src=js/inregistrare.js></script>
+    </head>
+    <body>
+
+    <%- include('../fragmente/nav_bar.ejs', {optiuni:optiuni}) %>
+
+    <main>
+    <div class="afisaj">
+        <h1>Inregistrare utilizator</h1>
+        
+		<% if (locals.err !="") { %>
+			<%-include("../fragmente/formular", {action: "/inreg"}) %>
+	<% } %>
+	<% if(locals.raspuns) { %>
+	<%- locals.raspuns+"<br/>"%>
+	<% } %>
+	<% if(locals.err) { %>
+	<%- locals.err %>
+	<% } %>
+    </div>
+</main>
+
+<footer>
+    <%- include("../fragmente/footer") %>
+</footer>
+
+</body>
+</html>

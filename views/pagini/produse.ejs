@@ -3,11 +3,12 @@
     <head>
 
         <%- include("../fragmente/head") %>
+        <title>Simple properties</title>
         <script type="text/javascript" src=js/produse.js></script>
         <link rel="stylesheet" href="css/produse.css" type="text/css" />
     </head>
     <body>
-    <%- include("../fragmente/nav_bar") %>
+    <%- include("../fragmente/nav_bar", {optiuni: optiuni}) %>
 
     <main>
         <label> Nume: <input type="text" id="inp-nume"></label>
@@ -69,7 +70,7 @@
             <div class="grid-produse">
                 <% for( let prod of locals.produse) { %>
                     <article class="produs" >
-                        <h3 class="nume">Nume: <a href="/produs/<%-prod.id %>" ><span class="val-nume"><%- prod.nume%></span></a></h3>
+                        <h3 class="nume">Nume: <a href="/produs?id=<%-prod.id %>" ><span class="val-nume"><%- prod.nume%></span></a></h3>
                         <div class="info-prod">
                             <p class="pret">Pret: <span class="val-pret"><%- prod.pret%></span></p>
                             <p class="calorii">Garantie: <span class="val-garantie"><%- prod.garantie%></span></p>

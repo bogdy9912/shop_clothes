@@ -37,7 +37,7 @@
     <!--    </nav>-->
     <%- include('../fragmente/nav_bar.ejs', {optiuni:optiuni}) %>
 </header>
-<p><%-ip%></p>
+
 <main>
     <div id="container">
         <section id="introductory-video">
@@ -173,6 +173,7 @@
         <section id="lorem4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At beatae cum earum fuga iusto
             labore, nisi quae reiciendis sed sequi sit voluptatem! Harum laudantium neque quaerat repellendus ullam unde
             vero.
+
         </section>
         <section id="lorem5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At beatae cum earum fuga iusto
             labore, nisi quae reiciendis sed sequi sit voluptatem! Harum laudantium neque quaerat repellendus ullam unde
@@ -187,13 +188,10 @@
             vero.
         </section>
         <section id="lorem8">
-
+            <p><%-ip%></p>
             <%- include('../fragmente/galerie_static', {imagini:imagini, cale: cale}) %>
         </section>
         <section id="galerie-animata" class="galerie-a">
-
-<!--            <h2>Same thing as before but animated!</h2>-->
-
                 <% for (let img of allImagini)
                 {
                 %>
@@ -204,42 +202,6 @@
                         </figcaption>
                     </figure>
                 <% } %>
-<!--                <figure >-->
-<!--                    <img src="/images/galerie_statica1_300.jpg" alt="Interstellar">-->
-<!--                    <figcaption>Interstellar</figcaption>-->
-<!--                </figure>-->
-<!--                <figure>-->
-<!--                    <img src="/images/galerie_statica2_300.jpeg" alt="Love Actually">-->
-<!--                    <figcaption>Love Actually</figcaption>-->
-<!--                </figure>-->
-<!--                <figure >-->
-<!--                    <img src="/images/galerie_statica3_300.jpg" alt="Catch me if you can">-->
-<!--                    <figcaption>Catch me if you can</figcaption>-->
-<!--                </figure>-->
-<!--                <figure>-->
-<!--                    <img src="/images/galerie_statica4_300.jpg" alt="About time">-->
-<!--                    <figcaption>About time</figcaption>-->
-<!--                </figure>-->
-<!--                <figure >-->
-<!--                    <img src="/images/galerie_statica5_300.jpg" alt="A beautiful mind">-->
-<!--                    <figcaption>A beautiful mind</figcaption>-->
-<!--                </figure>-->
-<!--                <figure>-->
-<!--                    <img src="/images/galerie_statica6_300.jpg" alt="Hateful eight">-->
-<!--                    <figcaption>Hateful eight</figcaption>-->
-<!--                </figure>-->
-<!--                <figure >-->
-<!--                    <img src="/images/galerie_statica7_300.jpg" alt="Dead poets society">-->
-<!--                    <figcaption>Dead poets society</figcaption>-->
-<!--                </figure>-->
-<!--                <figure>-->
-<!--                    <img src="/images/galerie_statica8_300.jpg" alt="Good Will Hunting">-->
-<!--                    <figcaption>Good Will Hunting</figcaption>-->
-<!--                </figure>-->
-<!--                <figure>-->
-<!--                    <img src="/images/galerie_statica9_300.png" alt="Your name">-->
-<!--                    <figcaption>Your name</figcaption>-->
-<!--                </figure>-->
 
         </section>
 
